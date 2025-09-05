@@ -1,0 +1,23 @@
+# [PROJECT NAME] 開發指南
+
+從所有功能計畫自動生成。上次更新：[DATE]
+
+## 活躍技術
+[EXTRACTED FROM ALL PLAN.MD FILES]
+
+## 專案結構
+```
+[ACTUAL STRUCTURE FROM PLANS]
+```
+
+## 命令
+[ONLY COMMANDS FOR ACTIVE TECHNOLOGIES]
+
+## 程式碼風格
+[LANGUAGE-SPECIFIC, ONLY FOR LANGUAGES IN USE]
+
+## 最近變更
+[LAST 3 FEATURES AND WHAT THEY ADDED]
+
+<!-- 手動新增開始 -->
+<!-- 手動新增結束 -->
