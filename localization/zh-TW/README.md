@@ -334,7 +334,7 @@ Claude Code 將會開始行動並建立實作。
 如果您在 Linux 上遇到 Git 驗證問題，可以安裝 Git 憑證管理員：
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 echo "正在下載 Git Credential Manager v2.6.1..."
 wget https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.1/gcm-linux_amd64.2.6.1.deb
