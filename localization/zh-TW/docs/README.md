@@ -1,10 +1,10 @@
 # 文件
 
-此資料夾包含 Spec Kit 的文件原始檔案，使用 [DocFX](https://dotnet.github.io/docfx/) 建構。
+此資料夾包含使用 [DocFX](https://dotnet.github.io/docfx/) 建立的規格套件文件原始檔案。
 
-## 本機建構
+## 本地建構
 
-若要在本機建構文件：
+要在本地建構文件：
 
 1. 安裝 DocFX：
    ```bash
@@ -21,9 +21,9 @@
 
 ## 結構
 
-- `docfx.json` - DocFX 設定檔
+- `docfx.json` - DocFX 配置檔案
 - `index.md` - 主要文件首頁
-- `toc.yml` - 目錄設定
+- `toc.yml` - 目錄配置
 - `installation.md` - 安裝指南
 - `quickstart.md` - 快速入門指南
 - `_site/` - 產生文件輸出 (被 git 忽略)
