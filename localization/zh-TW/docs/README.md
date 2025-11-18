@@ -1,17 +1,19 @@
 # 文件
 
-此資料夾包含使用 [DocFX](https://dotnet.github.io/docfx/) 建立的規格套件文件原始檔案。
+此資料夾包含 Spec Kit 的文件原始檔案，使用 [DocFX](https://dotnet.github.io/docfx/) 建立。
 
-## 本地建構
+## 本地建立
 
-要在本地建構文件：
+要在本地建立文件：
 
 1. 安裝 DocFX：
+
    ```bash
    dotnet tool install -g docfx
    ```
 
-2. 建構文件：
+2. 建立文件：
+
    ```bash
    cd docs
    docfx docfx.json --serve
@@ -30,4 +32,4 @@
 
 ## 部署
 
-當變更推送到 `main` 分支時，文件會自動建構並部署到 GitHub Pages。工作流程定義在 `.github/workflows/docs.yml` 中。
+當變更推送到 `main` 分支時，文件會自動建立並部署到 GitHub Pages。工作流程定義在 `.github/workflows/docs.yml` 中。
