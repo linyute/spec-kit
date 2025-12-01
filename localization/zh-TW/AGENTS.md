@@ -46,6 +46,7 @@ Specify 透過在初始化專案時產生代理特定的命令檔案和目錄結
 | **Amazon Q Developer CLI** | `.amazonq/prompts/` | Markdown | `q` | Amazon Q Developer CLI |
 | **Amp** | `.agents/commands/` | Markdown | `amp` | Amp CLI |
 | **SHAI** | `.shai/commands/` | Markdown | `shai` | SHAI CLI |
+| **IBM Bob** | `.bob/commands/` | Markdown | N/A (IDE-based) | IBM Bob IDE |
 
 ### 逐步整合指南
 
@@ -320,12 +321,13 @@ echo "✅ 完成"
 
 - **GitHub Copilot**：內建於 VS Code/相容編輯器
 - **Windsurf**：內建於 Windsurf IDE
+- **IBM Bob**：內建於 IBM Bob IDE
 
 ## 命令檔案格式
 
 ### Markdown 格式
 
-由以下代理使用：Claude、Cursor、opencode、Windsurf、Amazon Q Developer、Amp、SHAI
+由以下代理使用：Claude、Cursor、opencode、Windsurf、Amazon Q Developer、Amp、SHAI, IBM Bob
 
 **標準格式**：
 

@@ -134,23 +134,26 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <專案名稱
 
 ## 🤖 支援的 AI 代理
 
-| 代理                                                     | 支援 | 備註                                             |
-|-----------------------------------------------------------|---------|---------------------------------------------------|
-| [Claude Code](https://www.anthropic.com/claude-code)      | ✅ |                                                   |
-| [GitHub Copilot](https://code.visualstudio.com/)          | ✅ |                                                   |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | ✅ |                                                   |
-| [Cursor](https://cursor.sh/)                              | ✅ |                                                   |
-| [Qwen Code](https://github.com/QwenLM/qwen-code)          | ✅ |                                                   |
-| [opencode](https://opencode.ai/)                          | ✅ |                                                   |
-| [Windsurf](https://windsurf.com/)                         | ✅ |                                                   |
-| [Kilo Code](https://github.com/Kilo-Org/kilocode)         | ✅ |                                                   |
-| [Auggie CLI](https://docs.augmentcode.com/cli/overview)   | ✅ |                                                   |
-| [CodeBuddy CLI](https://www.codebuddy.ai/cli)             | ✅ |                                                   |
-| [Roo Code](https://roocode.com/)                          | ✅ |                                                   |
-| [Codex CLI](https://github.com/openai/codex)              | ✅ |                                                   |
+| 代理                                                       | 支援 | 備註                                             |
+|-----------------------------------------------------------|----|---------------------------------------------------|
 | [Amazon Q Developer CLI](https://aws.amazon.com/developer/learning/q-developer-cli/) | ⚠️ | Amazon Q Developer CLI [不支援](https://github.com/aws/amazon-q-developer-cli/issues/3064) 斜線命令的自訂引數。 |
-| [Amp](https://ampcode.com/) | ✅ | |
-| [SHAI (OVHcloud)](https://github.com/ovh/shai) | ✅ | |
+| [Amp](https://ampcode.com/)                               | ✅ | |
+| [Auggie CLI](https://docs.augmentcode.com/cli/overview)   | ✅ |                                                   |
+| [Claude Code](https://www.anthropic.com/claude-code)      | ✅ |                                                   |
+| [CodeBuddy CLI](https://www.codebuddy.ai/cli)             | ✅ |                                                   |
+| [Codex CLI](https://github.com/openai/codex)              | ✅ |                                                   |
+| [Cursor](https://cursor.sh/)                              | ✅ |                                                   |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | ✅ |                                                   |
+| [GitHub Copilot](https://code.visualstudio.com/)          | ✅ |                                                   |
+| [IBM Bob](https://www.ibm.com/products/bob)               | ✅ | 基於 IDE 的代理，支援斜線命令 |
+| [Jules](https://jules.google.com/)                        | ✅ | |
+| [Kilo Code](https://github.com/Kilo-Org/kilocode)         | ✅ |                                                   |
+| [opencode](https://opencode.ai/)                          | ✅ |                                                   |
+| [Qwen Code](https://github.com/QwenLM/qwen-code)          | ✅ |                                                   |
+| [Roo Code](https://roocode.com/)                          | ✅ |                                                   |
+| [SHAI (OVHcloud)](https://github.com/ovh/shai)            | ✅ | |
+| [Windsurf](https://windsurf.com/)                         | ✅ |                                                   |
+
 
 ## 🔧 Specify CLI 參考
 
@@ -168,7 +171,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <專案名稱
 | 引數/選項        | 類型     | 描述                                                                  |
 |------------------------|----------|------------------------------------------------------------------------------|
 | `<專案名稱>`       | 引數 | 新專案目錄的名稱 (如果使用 `--here` 則為選用，或使用 `.` 表示目前目錄) |
-| `--ai`                 | 選項   | 要使用的 AI 助理：`claude`、`gemini`、`copilot`、`cursor-agent`、`qwen`、`opencode`、`codex`、`windsurf`、`kilocode`、`auggie`、`roo`、`codebuddy`、`amp`、`shai` 或 `q` |
+| `--ai`                 | 選項   | 要使用的 AI 助理：`claude`、`gemini`、`copilot`、`cursor-agent`、`qwen`、`opencode`、`codex`、`windsurf`、`kilocode`、`auggie`、`roo`、`codebuddy`、`amp`、`shai`、`q` 或 `bob` |
 | `--script`             | 選項   | 要使用的指令碼變體：`sh` (bash/zsh) 或 `ps` (PowerShell)                 |
 | `--ignore-agent-tools` | 旗標     | 跳過對 Claude Code 等 AI 代理工具的檢查                             |
 | `--no-git`             | 旗標     | 跳過 git 儲存庫初始化                                          |
@@ -198,6 +201,9 @@ specify init my-project --ai amp
 
 # 使用 SHAI 支援初始化
 specify init my-project --ai shai
+
+# 使用 IBM Bob 支援初始化
+specify init my-project --ai bob
 
 # 使用 PowerShell 指令碼初始化 (Windows/跨平台)
 specify init my-project --ai copilot --script ps
