@@ -43,6 +43,7 @@ Specify 透過在初始化專案時產生代理特定的命令檔案和目錄結
 | **Auggie CLI** | `.augment/rules/` | Markdown | `auggie` | Auggie CLI |
 | **Roo Code** | `.roo/rules/` | Markdown | 不適用 (基於 IDE) | Roo Code IDE |
 | **CodeBuddy CLI** | `.codebuddy/commands/` | Markdown | `codebuddy` | CodeBuddy CLI |
+| **Qoder CLI** | `.qoder/commands/` | Markdown | `qoder` | Qoder CLI |
 | **Amazon Q Developer CLI** | `.amazonq/prompts/` | Markdown | `q` | Amazon Q Developer CLI |
 | **Amp** | `.agents/commands/` | Markdown | `amp` | Amp CLI |
 | **SHAI** | `.shai/commands/` | Markdown | `shai` | SHAI CLI |
@@ -312,6 +313,7 @@ echo "✅ 完成"
 - **opencode**：`opencode` CLI
 - **Amazon Q Developer CLI**：`q` CLI
 - **CodeBuddy CLI**：`codebuddy` CLI
+- **Qoder CLI**: `qoder` CLI
 - **Amp**：`amp` CLI
 - **SHAI**：`shai` CLI
 

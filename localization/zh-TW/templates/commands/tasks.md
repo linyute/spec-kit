@@ -42,7 +42,7 @@ $ARGUMENTS
    - 為每個使用者故事建立並行執行範例
    - 驗證任務完整性（每個使用者故事都包含所有必要的、可獨立測試的任務）
 
-4. **產生 tasks.md**：使用 `.specify/templates/tasks-template.md` 作為結構，填入：
+4. **產生 tasks.md**：使用 `templates/tasks-template.md` 作為結構，填入：
    - plan.md 中正確的功能名稱
    - 階段 1：設定任務（專案初始化）
    - 階段 2：基礎任務（所有使用者故事的阻塞性先決條件）
