@@ -24,8 +24,10 @@ $ARGUMENTS
 git config --get remote.origin.url
 ```
 
-**僅當遠端是 GITHUB URL 時才繼續執行後續步驟**
+> [!注意]
+> 僅當遠端是 GITHUB URL 時才繼續執行後續步驟
 
 1. 對於列表中的每個任務，使用 GitHub MCP 伺服器在代表 Git 遠端的倉庫中建立一個新問題。
 
-**在任何情況下都不得在與遠端 URL 不匹配的倉庫中建立問題**
+> [!注意]
+> 在任何情況下都不得在與遠端 URL 不匹配的倉庫中建立問題

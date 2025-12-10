@@ -86,7 +86,7 @@ specify init --here --force --ai copilot
 
 如果沒有 `--force`，CLI 會警告您並要求確認：
 
-```
+```text
 Warning: Current directory is not empty (25 items)
 Template files will be merged with existing content and may overwrite existing files
 Proceed? [y/N]
@@ -286,11 +286,13 @@ $env:SPECIFY_FEATURE = "001-my-feature"
 
 1. **完全重新啟動您的 IDE/編輯器** (不只是重新載入視窗)
 2. **對於基於 CLI 的代理程式**，驗證檔案是否存在：
+
    ```bash
    ls -la .claude/commands/      # Claude Code
    ls -la .gemini/commands/       # Gemini
    ls -la .cursor/commands/       # Cursor
    ```
+
 3. **檢查代理程式特定的設定：**
    - Codex 需要 `CODEX_HOME` 環境變數
    - 某些代理程式需要重新啟動工作區或清除快取
@@ -312,7 +314,8 @@ cp /tmp/constitution-backup.md .specify/memory/constitution.md
 ### 「警告：目前目錄不為空」
 
 **完整警告訊息：**
-```
+
+```text
 Warning: Current directory is not empty (25 items)
 Template files will be merged with existing content and may overwrite existing files
 Do you want to continue? [y/N]
@@ -329,6 +332,7 @@ Do you want to continue? [y/N]
 **哪些會被覆寫：**
 
 僅限 Spec Kit 基礎設施檔案：
+
 - 代理程式指令檔案 (`.claude/commands/`、`.github/prompts/` 等)
 - `.specify/scripts/` 中的指令碼
 - `.specify/templates/` 中的範本
@@ -346,6 +350,7 @@ Do you want to continue? [y/N]
 - **輸入 `y` 並按下 Enter** — 繼續合併 (升級時建議)
 - **輸入 `n` 並按下 Enter** — 取消操作
 - **使用 `--force` 旗標** — 完全跳過此確認：
+
   ```bash
   specify init --here --here --force --ai copilot
   ```
@@ -388,6 +393,7 @@ uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 **解釋：**
 
 `specify` CLI 工具用於：
+
 - **初始設定：** `specify init` 在您的專案中啟動 Spec Kit
 - **升級：** `specify init --here --force` 更新範本和指令
 - **診斷：** `specify check` 驗證工具安裝
@@ -397,6 +403,7 @@ uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 **如果您的代理程式無法識別斜線指令：**
 
 1. **驗證指令檔案是否存在：**
+
    ```bash
    # 對於 GitHub Copilot
    ls -la .github/prompts/
@@ -412,6 +419,7 @@ uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 4. **對於某些代理程式**，您可能需要重新載入工作區或清除快取
 
 **相關問題：** 如果 Copilot 無法打開本地檔案或意外使用 PowerShell 指令，這通常是 IDE 上下文問題，與 `specify` 無關。嘗試：
+
 - 重新啟動 VS Code
 - 檢查檔案權限
 - 確保工作區資料夾已正確打開

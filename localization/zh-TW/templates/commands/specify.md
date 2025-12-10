@@ -40,27 +40,28 @@ $ARGUMENTS
      - "Fix payment processing timeout bug" → "fix-payment-timeout"
 
 2. **在建立新分支之前檢查現有分支**：
-   
+
    a. 首先，獲取所有遠端分支，確保我們有最新資訊：
+
       ```bash
       git fetch --all --prune
       ```
-   
+
    b. 為短名稱在所有來源中找到最高的特徵號：
       - 遠端分支：`git ls-remote --heads origin | grep -E 'refs/heads/[0-9]+-<short-name>$'`
       - 本地分支：`git branch | grep -E '^[* ]*[0-9]+-<short-name>$'`
       - 規格目錄：檢查匹配 `specs/[0-9]+-<short-name>` 的目錄
-   
+
    c. 確定下一個可用號碼：
       - 從所有三個來源提取所有號碼
       - 找到最高號碼 N
       - 新分支號碼使用 N+1
-   
+
    d. 使用計算出的號碼和短名稱執行腳本 `{SCRIPT}`：
       - 傳遞 `--number N+1` 和 `--short-name "your-short-name"` 以及特徵描述
       - Bash 範例：`{SCRIPT} --json --number 5 --short-name "user-auth" "Add user authentication"`
       - PowerShell 範例：`{SCRIPT} -Json -Number 5 -ShortName "user-auth" "Add user authentication"`
-   
+
    **重要**：
    - 檢查所有三個來源（遠端分支、本地分支、規格目錄）以找到最高號碼
    - 僅匹配具有確切短名稱模式的分支/目錄
