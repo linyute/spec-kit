@@ -151,14 +151,14 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME
 
 ## 主要原則
 
--   **明確**您正在建構的內容以及原因
--   在規格階段**不要專注於技術堆疊**
--   在實作之前**迭代和完善**您的規格
--   在程式碼撰寫開始之前**驗證**計畫
--   **讓 AI 代理程式處理**實作細節
+- **明確**您正在建構的內容以及原因
+- 在規格階段**不要專注於技術堆疊**
+- 在實作之前**迭代和完善**您的規格
+- 在程式碼撰寫開始之前**驗證**計畫
+- **讓 AI 代理程式處理**實作細節
 
 ## 後續步驟
 
--   閱讀 [完整方法論](../spec-driven.md) 以獲取深入指導
--   查看儲存庫中的 [更多範例](../templates)
--   在 GitHub 上探索 [原始程式碼](https://github.com/github/spec-kit)
+- 閱讀 [完整方法論](../spec-driven.md) 以獲取深入指導
+- 查看儲存庫中的 [更多範例](../templates)
+- 在 GitHub 上探索 [原始程式碼](https://github.com/github/spec-kit)

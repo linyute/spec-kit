@@ -162,7 +162,6 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <專案名稱
 | [SHAI (OVHcloud)](https://github.com/ovh/shai)            | ✅ | |
 | [Windsurf](https://windsurf.com/)                         | ✅ |                                                   |
 
-
 ## 🔧 Specify CLI 參考
 
 `specify` 命令支援以下選項：
